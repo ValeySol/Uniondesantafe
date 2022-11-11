@@ -1,0 +1,567 @@
+/*ESTO ME SACO LA EXTENSION LATERAL DERECHA QUE ME HACIA MAS GRANDE LA PAG (NO TENIA CONTENIDO)*/
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+*{box-sizing: border-box;
+}
+ 
+.fila::after{content: normal;
+  clear: both;
+  display: table;
+}
+
+
+body{
+    font-family:monospace;
+    display:flex;
+    min-height: 100VH;
+    flex-direction:column; 
+    background-color: white;   
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+
+
+/*BANNER EN HEADER CON FOTO*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 400px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes banner{
+	0%, 20%{
+		background-image: url("IMAGENES/JUGADORES/imagen1.jpeg");
+	}
+	25%, 45%{
+		background-image: url("IMAGENES/JUGADORES/imagen4.jpeg");
+	}
+	50%, 70%{
+		background-image: url("IMAGENES/JUGADORES/imagen6.jpeg");
+	}
+	75%, 100%{
+		background-image: url("IMAGENES/JUGADORES/imagen9.jpeg");
+	}
+}
+.capa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.2);
+}
+.info{
+	z-index: 1;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+}
+.info h1{ /*letra del club union*/
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.info p{ /*letra del "plantel actual tatengue*/
+	color: #fff;
+	line-height: 1.7;
+	margin-bottom: 50px;
+    font-size: 30px;
+}
+
+/*NAVEGADOR DE LA BARRA*/
+
+.barranav{
+    font-size: 20px;
+    display: inline;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 10px;
+    top: -25px;
+}
+
+nav{
+    background-color: red;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+
+nav a{    
+    display: inline;
+    padding: 0.5rem;
+    border-right: 2px solid white; 
+    margin-left: 2px;
+    font-family:serif;
+}
+   
+/*IMAGENES EN CUADRICULA*/ 
+.container img{
+    width: 300px;
+    height: 200px;
+    margin-left: 8rem;
+}
+
+.imagen1{                /* Santiago Mele - Sebastián Moyano - Diego Polenta - Franco Calderón */
+    display: flex;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen2{                /* Facundo Aguero - Claudio Corvalan - Nicolas Peñailillo - Lucas Esquivel */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen3{               /* Emanuel Britez - Federico Vera - Juan Carlos Portillo - Juan Nardoni */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen4{               /* Ezequiel Cañete - Enzo Roldan - Sebastian Juarena - Leonel Bucca */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen5{                /* Imanol Machuca - Kevin Zenon - Dylan Gissi - Francisco Gerometta */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen6{               /* Bryan Castrillon - Mauro Luna Diale - Daniel Juarez - Franco Troyansky */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.imagen7{              /* Mariano Bauer - Leonardo Ramos - Jonatan Alvez - Matias Gallegos */
+    display: flex;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left:-1.5rem;
+    margin-right: 14.5rem;
+}
+.fila::after{    
+    content: "";
+    clear:both;
+    display: table;
+}
+
+/* TAMAÑO DE LA IMAGEN */
+img{    
+    height: 20%;
+    width: 20%;
+}
+
+/* ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 1° GRUPO */
+
+.columna1 ul1{       /* SANTIAGO MELE TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -122rem;
+} 
+
+.columna1 ul2{      /* SEBASTIAN MOYANO TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 24rem;
+    margin-top: -122rem;
+}
+.columna1 ul3{     /* DIEGO POLENTA TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 43.5rem;
+    margin-top: -122rem;
+}
+.columna1 ul4{      /* FRANCO CALDERON TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 60rem;
+    margin-top: -122rem;
+}
+
+/*               ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 2° GRUPO */
+
+.columna1 ul5{       /* FACUNDO AGUERO TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -101rem;
+} 
+
+.columna1 ul6{      /* CLAUDIO CORVALAN TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 24rem;
+    margin-top: -101rem;
+}
+.columna1 ul7{     /* NICOLAS PEÑAILILLO */
+    display: inline-table;
+    float: left;
+    padding-left: 43.5rem;
+    margin-top: -101rem;
+}
+.columna1 ul8{      /* LUCAS ESQUIVEL TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 62rem;
+    margin-top: -101rem;
+}
+
+
+/*           ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 3° GRUPO */
+
+
+
+
+.columna1 ul9{       /* EMANUEL BRITEZ TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -80rem;
+} 
+
+.columna1 ul10{      /* FEDERICO VERA TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 24rem;
+    margin-top: -80rem;
+}
+.columna1 ul11{     /* JUAN CARLOS PORTILLO TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 43.5rem;
+    margin-top: -80rem;
+}
+.columna1 ul12{      /* JUAN IGNACIO NARDONI TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 64.5rem;
+    margin-top: -80rem;
+}
+
+
+
+/*           ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 3° GRUPO */
+
+
+
+
+.columna1 ul13{       /* EZEQUIEL CAÑETE TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -60.5rem;
+} 
+
+.columna1 ul14{      /* ENZO ROLDAN TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 22.5rem;
+    margin-top: -60.5rem;
+}
+.columna1 ul15{     /* SEBASTIAN JAURENA TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 41rem;
+    margin-top: -60.5rem;
+}
+.columna1 ul16{      /* LIONEL BUCCA TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 62.5rem;
+    margin-top: -60.5rem;
+}
+
+
+/*           ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 4° GRUPO */
+
+
+
+
+.columna1 ul17{       /* IMANOL MACHUCA TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -40rem;
+} 
+
+.columna1 ul18{      /* KEVIN ZENON TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 24rem;
+    margin-top: -40rem;
+}
+.columna1 ul19{     /* DYLAN GISSI TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 42.5rem;
+    margin-top: -40rem;
+}
+.columna1 ul20{      /* FRANCISCO GEROMETTA TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 60rem;
+    margin-top: -40rem;
+}
+
+
+/*           ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 5° GRUPO */
+
+
+
+
+.columna1 ul21{       /* BRIAN CASTRILLON TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: -19.5rem;
+} 
+
+.columna1 ul22{      /* MAURO LUNA DIALE TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 24rem;
+    margin-top: -19.5rem;
+}
+.columna1 ul23{     /* DANIEL JUAREZ TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 43rem;
+    margin-top: -19.5rem;
+}
+.columna1 ul24{      /* FRANCO TROYANSKY TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 60rem;
+    margin-top: -19.5rem;
+}
+
+/*           ALINEACION DE LOS TEXTOS CON RESPECTO A LAS FOTOS 6° GRUPO */
+
+
+
+
+.columna1 ul25{       /* MARIANO BAUER TEXTO */
+    display:inline-table;
+    float: left;
+    padding-left: 6.5rem;
+    margin-top: 1rem;
+} 
+
+.columna1 ul26{      /* LEONARDO RAMOS TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 8rem;
+    margin-top: 1rem;
+}
+.columna1 ul27{     /* JONATAN ALVEZ TEXTO */
+    display: inline-table;
+    float: left;
+    padding-left: 7rem;
+    margin-top: 1rem;
+}
+.columna1 ul28{      /* MATIAS GALLEGOS TEXTO */ 
+    display: inline-table;
+    float: left;
+    padding-left: 7.5rem;
+    margin-top: 1rem;
+}
+
+
+
+/*footer*/
+*{ box-sizing: border-box;
+    font-family:"lato", sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.container{
+    flex:  1; /* SAME AS FLEX-GROW: 1; */
+}
+
+footer{
+    background-color: red;
+    color:black;
+    line-height: 1.5;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+a hover{
+    text-decoration: underline;
+}
+
+
+
+.ft-main{
+    padding: 1.25REM 1.875REM;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*NOTICIAS*/
+.ft-main-item{ 
+    display: flex;    
+    padding:0.25REM;
+    margin-left: 1rem;
+   min-width: 6.5REM;
+}
+.ft-main-item li{
+    display: flex;
+    margin-left: -95px;
+    margin-top: 30px;    
+}
+.ft-main-item li2{
+    margin-left: -95px;
+}
+
+.ft-main-item2{
+    display: flex;
+    padding:0.25REM;
+    min-width: 6.5REM;
+    margin-left: 10rem;
+    margin-top:-85px
+}
+
+.ft-main-item2 p{
+    display: inline;
+    margin-top: 30px;
+    margin-left: -15rem;
+}
+
+.ft-main-item2 form{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: -23rem;
+    margin-right: 50rem;   
+}
+
+
+@media only screen and (min-width:29.8125REM);
+ .ft-main{ justify-content: space-around;
+}
+
+@media only screen and (min-width:77.5REM);
+    .ft-main {
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"]
+{ 
+  border:0;
+  padding:0.625REM;
+  margin-top: 0.3125REM;
+}
+
+input[type:"submit"]
+{
+    background-color: black;
+    color:black;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625REM 0.9375REM;
+    margin-top: 0.3125REM;
+}
+
+.ft-social{
+    padding: 0 1.875REM 1.25REM;
+    display: flex;
+    margin-left: 74rem;
+    margin-top: -5rem;
+}
+
+
+
+.ft-legal{ 
+    padding: 0.9375REM 1.875REM;
+    background-color: white;
+}
+
+.ft-legal-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.ft-legal-list li{
+    margin: 0.125REM 0.625REM;
+    white-space: nowrap;
+}
+
+/*ONE BEFORE THE LASE CHILD*/
+.ft- legal-list li:nth-child(2);{
+    flex:1;  /*same as flex-grow: 1;*/
+}
+
+/*IMAGENES DE REDES SOCIALES*/
+.footer__social__facebook__imagen{
+    width: 30px;
+}
+
+.footer__social__instagram__imagen{
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

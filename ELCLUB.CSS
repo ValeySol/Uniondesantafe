@@ -1,0 +1,487 @@
+
+/*ESTO ME SACO LA EXTENSION LATERAL DERECHA QUE ME HACIA MAS GRANDE LA PAG (NO TENIA CONTENIDO)*/
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+
+header{
+    font-family:sans-serif; 
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 1rem;
+}
+
+/*Estilos para el encabezado*/
+.header{ /*PARA LA BARRA DEL NAV*/
+    background-color: white;
+    color:black;
+	width: 100%; /*TAMAÑO DE ANCHO BARRA NAV*/
+	height: 50px; /*TAMAÑO DE LA BARRA DEL NAV*/
+	text-align:left
+ }
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin:left;
+}
+.container .btn-menu, .logo{
+	float: left;
+	line-height:12px;
+}
+
+/*BARRITAS EN EL NAV LATERAL*/
+.container .btn-menu label{
+	color:black; /*COLOR DEL ICONO DE LAS BARRITAS*/
+	font-size: 22px; /*TAMAÑO DE LAS BARRITAS*/
+	cursor: pointer;
+}
+.logo h1{ /*COLOR DE LA PALABRA QUE PONGA EN LA BARRA*/
+	color:black;
+	font-weight: 400;
+	font-size: 18px; /*TAMAÑO DEL "MAS INFORMACION"*/
+    font-family:monospace;
+	margin-left: 10px;
+}
+	
+	
+/*Fin de Estilos para el encabezado*/
+
+/*Menú lateral*/
+#btn-menu{
+	display: none;
+}
+.container-menu{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 384.5vh;
+	top: 0;left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.cont-menu{
+	width: 100%;
+	max-width: 170px; /*tamaño de la barra lateral*/
+	background: red; /*color barra lateral*/
+	height:384.5vh;/*argo de la barra lat*/
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: #c7c7c7;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+	border-left: 5px solid #ffffff; /*color de la linea del pulsor lat*/
+	background: #1f1f1f; /*color del fondo del pulsor de la barra lateral*/
+}
+.cont-menu label{ /*Ubicacion y color de la cruz de barra lat*/
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color:white;
+	cursor: pointer;
+	font-size: 20px;
+}
+/*Fin de Menù lateral*/
+
+
+/*CUERPO*/
+
+body{
+    background-color:gainsboro;
+    text-align: justify;
+    font-family:fantasy; 
+    line-height: 1.2; 
+    color: white;
+    
+} 
+
+.texto{
+    margin-left: 3rem;
+    margin-right: 27rem;
+}
+
+
+/*IMAGEN FONDO BODY*/
+body{
+    font-family:sans-serif;
+    display:flex;
+    min-height: 100VH;
+   flex-direction:column; 
+    background-color: white;
+        
+}
+
+
+
+
+/*BANNER CON FOTO CHIQUITA Y LINK QUE TE LLEVA A OTRA PÁGINA* (((PUBLICIDAD KAPPA))*/
+ 
+.responsive-banner {
+	margin: -80px;
+	width: 100%;
+	min-width: 230px;
+	max-width: 330px;
+	position: relative;
+	height: auto;
+	min-height: 300px;
+	max-height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: white;   /*color del banner*/
+}
+.container-envelope {
+	padding: 20px 15px;
+	color: black; /*color del texto*/
+}
+
+img {
+	max-width : 500px;
+	width: 100%;
+	position: relative;
+}
+
+
+/*ALINEACION DE PUBLICIDAD*/
+.alineacion{
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    margin-left: 1rem;
+    margin-right: -38rem;  
+}
+
+/*BANNER CON FOTO CHIQUITA Y LINK QUE TE LLEVA A OTRA PÁGINA* (((PUBLICIDAD CERVEZA))*/
+ 
+.responsive-banner2 {
+	margin: -80px;
+	width: 100%;
+	min-width: 230px;
+	max-width: 330px;
+	position: relative;
+	height: auto;
+	min-height: 300px;
+	max-height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: white;   /*color del banner*/
+}
+.container-envelope {
+	padding: 20px 15px;
+	color: black; /*color del texto*/
+}
+
+img {
+	max-width : 500px;
+	width: 100%;
+	position: relative;
+}
+
+
+/*ALINEACION DE PUBLICIDAD*/
+.alineacion2{
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 28rem;
+    margin-left: 1rem;
+    margin-right: -38rem;  
+}
+
+
+
+/*FOTOS EN MOVIMIENTO*/
+.fotos{
+    width: 800px;
+    height: 500px;
+    border: 3px solid white;
+    margin: auto;
+    
+
+    background-size: 100% 100%;
+    
+    animation: fotos 10s infinite;
+}
+    
+    
+@keyframes fotos{
+    0%, 15%{
+        background-image:  url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/DJI_0061-drone-2048x1152.jpg);
+    }
+    15%, 30%{
+        background-image:  url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/DSC_0462.jpg);     
+        opacity: 1;
+    }
+    
+    30%, 45%{
+        background-image: url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/estadio-15-de-abril-web.jpg);
+    }
+    
+    45%, 60%{
+        background-image: url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/7c2c04d58f200c66697d62ceb56dabe5.jpg);
+    }
+    
+    60%, 75%{
+        background-image: url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/rassegna-asientos-estadios-union-de-santa-fe.jpg);
+    }
+
+    75%, 85%{
+        background-image: url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/rassegna-asientos-estadios-union-de-santa-fe-2.jpg);
+    }
+    85%, 100%{
+        background-image: url(https://www.clubaunion.com.ar/wp-content/uploads/2020/08/rassegna-asientos-estadios-union-de-santa-fe-3.jpg);
+    }
+    
+}
+    
+    
+    
+
+/*footer*/
+*{ box-sizing: border-box;
+    font-family:"lato", sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.container{
+    flex:  1; /* SAME AS FLEX-GROW: 1; */
+}
+
+footer{
+    background-color:red;
+    color:black;
+    line-height: 1.5;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+a hover{
+    text-decoration: underline;
+}
+
+
+.ft-main{
+    padding: 1.25REM 1.875REM;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*NOTICIAS*/
+.ft-main-item{ 
+    display: flex;    
+    padding:0.25REM;
+    margin-left: 1rem;
+   min-width: 6.5REM;
+}
+.ft-main-item li{
+    display: flex;
+    margin-left: -95px;
+    margin-top: 30px;    
+}
+.ft-main-item li2{
+    margin-left: -95px;
+}
+
+/*MANTENTE ACTUALIZADO*/
+.ft-main-item2{
+    display: flex;
+    padding:0.25REM;
+    min-width: 6.5REM;
+    margin-left: 10rem;
+    margin-top:-85px
+}
+
+.ft-main-item2 p{
+    display: inline;
+    margin-top: 30px;
+    margin-left: -15rem;
+}
+
+.ft-main-item2 form{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: -23rem;
+    margin-right: 50rem;
+    
+    
+}
+
+@media only screen and (min-width:29.8125REM);
+ .ft-main{ justify-content: space-around;
+}
+
+@media only screen and (min-width:77.5REM);
+    .ft-main {
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"]
+{ 
+  border:0;
+  padding:0.625REM;
+  margin-top: 0.3125REM;
+}
+
+input[type:"submit"]
+{
+    background-color: black;
+    color:black;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625REM 0.9375REM;
+    margin-top: 0.3125REM;
+}
+
+.ft-social{
+    padding: 0 1.875REM 1.25REM;
+    display: flex;
+    margin-left: 74rem; /*ICONOS DE REDES SOCIALES*/
+    margin-top: -5rem;
+}
+
+
+
+.ft-legal{ 
+    padding: 0.9375REM 1.875REM;
+    background-color: white;
+}
+
+.ft-legal-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.ft-legal-list li{
+    margin: 0.125REM 0.625REM;
+    white-space: nowrap;
+}
+
+/*ONE BEFORE THE LASE CHILD*/
+.ft- legal-list li:nth-child(2);{
+    flex:1;  /*same as flex-grow: 1;*/
+}
+
+/*IMAGENES DE REDES SOCIALES*/
+.footer__social__facebook__imagen{
+    width: 30px;
+}
+
+.footer__social__instagram__imagen{
+    width: 30px;
+}
+
+
+/*BARRA DEL MENU*/ 
+
+.Menunavegacion li{
+    display: inline;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 10px;
+    top: 80px;
+}
+
+
+.Menunavegación{
+    padding: 1rem;
+    margin: 0;
+    display: block;
+    background-color: white;
+    font-weight: bold;
+    margin-right: 0;
+    padding-left: 0;
+}
+    
+
+.Menunavegación a{
+    display: inline;
+    padding: 0.5rem;
+    border-right: 1px solid black; 
+    margin-left: 2px;
+}
+
+
+
+.Menunavegación ahover{ 
+    background-color: black;
+    padding: 1rem;
+}
+
+
+/*IMAGENES DE REDES SOCIALES*/
+.footer__social__facebook__imagen{
+    width: 30px;
+}
+
+.footer__social__instagram__imagen{
+    width: 30px;
+}
+
+/*IMAGEN FONDO BODY*/
+body{
+    font-family:sans-serif;
+    display:flex;
+    min-height: 100VH;
+    flex-direction:column; 
+    background-image: url(https://besthqwallpapers.com/Uploads/15-4-2019/87651/thumb2-union-de-santa-fe-creative-3d-logo-red-background-3d-emblem-argentinean-football-club.jpg);
+
+}
+
+/*Footer legal */
+.ft-legal{ 
+    padding: 0.9375REM 1.875REM;
+    background-color: white;
+}
+
+.ft-legal-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.ft-legal-list li{
+    margin: 0.125REM 0.625REM;
+    white-space: nowrap;
+}
